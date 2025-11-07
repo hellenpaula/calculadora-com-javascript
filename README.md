@@ -1,5 +1,5 @@
 <h1 align="center"> Calculadora </h1>
-<h1 align="center"> <a href="#" target="_blank">📍Veja o projeto aqui! </a></h1> 
+<h1 align="center"> <a href="https://hellenpaula.github.io/calculadora-com-javascript/" target="_blank">📍Veja o projeto aqui! </a></h1> 
 
 ## 📷 Preview do projeto:
 
@@ -23,13 +23,13 @@ Durante o processo, o foco esteve em compreender como estruturar o raciocínio l
 - Interface simples, organizada e com feedback visual nos botões.
 
 ## 💻 Tecnologias utilizadas:
-- HTML5 – Estrutura semântica da aplicação.
+-  [HTML5](https://developer.mozilla.org/en-US/docs/Web/HTML) – Estrutura semântica da aplicação.
 
-- CSS3 – Estilização e organização visual dos elementos.
+- [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS) – Estilização e organização visual dos elementos.
 
-- JavaScript (ES6+) – Implementação da lógica de cálculo e manipulação do DOM.
+- [JavaScript (ES6+)](https://developer.mozilla.org/en-US/docs/Web/JavaScript) – Implementação da lógica de cálculo e manipulação do DOM.
 
-## Fluxo lógico da calculadora:
+## ⚙️ Fluxo lógico da calculadora:
 O funcionamento da calculadora foi estruturado com base em três estados principais e controle de eventos em cada botão.
 Abaixo está o fluxo simplificado de como o código opera:
 
