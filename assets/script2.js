@@ -8,6 +8,9 @@ let numeroAnterior = "";
 let operador = null;
 let flagResultadoMostrado = false;
 let resultado = "";
+let buttonTema = document.querySelector("#btn");
+let tagBody = document.querySelector("body");
+let icon = document.querySelector("i");
 
 // Percorrendo os elementos do array, aplicando evento de click em cada um que chama função:
 for (let n=0; button[n]; n++ ) {
@@ -119,4 +122,21 @@ function calculando(n) {
         numeroAnterior = "";
         operador = null;
     }
+}
+
+buttonTema.addEventListener("click", alterandoTema);
+
+function alterandoTema() {
+     let escuro = tagBody.className === 'escuro';
+    //  console.log(escuro);
+    if (escuro) {
+        tagBody.classList.remove("escuro");
+        icon.className = "fa-regular fa-sun";
+        
+
+    } else {
+        tagBody.className = "escuro";
+        icon.className = "fa-regular fa-moon";
+    }
+    
 }
