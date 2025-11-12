@@ -2,26 +2,32 @@
 
 :root {
     --background: rgb(184, 184, 184);
-    --button: rgb(222, 222, 222);
-    --buttonHover: rgb(214, 214, 214);
+    --button: #f8f8f8;
+    --buttonHover: #ffffff7f;
     --backgroundDisplay: white;
     --buttonTemaHover: rgb(170, 170, 170);
     --borderButtonTema: rgb(222, 222, 222);
     --borderButton: rgb(184, 184, 184);
     --boxShadow:rgba(135, 134, 134, 0.797);
     --colorFont: black;
+    --backgroundTeclado: rgba(234, 234, 234, 0.712);
+    --backgroundSinal:  lch(61.53% 86.93 50.77);
+    --backgroundHoverSinal: lch(59.78% 81.47 51.1);
 }
 
 .escuro {
-    --background: #33383E;
-    --button: #434853;
+    --background: #4f545a ;
+    --button: #454547c1;
     --buttonHover: #7276808e;
-    --backgroundDisplay: white;
+    --backgroundDisplay: /* white */ rgb(0, 0, 0);
     --buttonTemaHover: #505861;
     --borderButtonTema: rgb(222, 222, 222);
     --borderButton: rgb(95, 104, 125);
     --boxShadow:rgba(30, 30, 30, 0.797);
     --colorFont: rgb(241, 239, 239);
+    --backgroundTeclado:rgb(15, 15, 15) ;
+    --backgroundSinal:  lch(61.53% 86.93 50.77);
+    
 }
 
 * {
@@ -40,8 +46,10 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    min-height: 100%;
     position: relative;
+    
+    
     
 }
 
@@ -50,18 +58,21 @@ header {
     display: flex;
     justify-content: center;
     position: absolute;
-    top: 30px;
+    top:14px;
+    margin-bottom: 15px;
+    height: 3.3rem;
 }
 
 #btn {
     background-color: transparent;
     font-size: 20px;
     border: 1px solid  var(--borderButtonTema);
-    padding: 10px;
+    padding: 15px 10px 15px 10px;
     border-radius: 5px;
     display: flex;
     gap: 10px;
     align-items: center;
+    height:100%;
 
 }
 
@@ -72,22 +83,24 @@ header {
 .containerCalculadora {
     /* display: grid; */
     box-shadow: 1px 1px 10px var(--boxShadow);
-    border-radius: 7px;
+    border-radius: 10px;
     overflow: hidden;
-    width: 300px;
+    width: 316px;
+    margin-top: 70px;
 }
 
 .display {
     display: grid;
-    height:100px;
+    height:130px;
     grid-template-areas: "elemento1 elemento2";
     background-color: var(--backgroundDisplay);
-    
+    align-items: center;
 }
 
 
 .displayInput {
     background: var(--backgroundDisplay);
+    color: var(--colorFont);
     border: none;
     outline: none;
     padding: 15px ;
@@ -103,17 +116,21 @@ header {
     grid-template-columns: repeat(4, 1fr);
     grid-column: 1/ 5;
     grid-row: 2/6;
-    height: 350px;
-    
+    height: 400px;
+    padding: 16px 14px 0px 14px;
+    gap: 10px;
+    background-color: var(--backgroundTeclado);
     
 }
 button {
     font-size: 27px;
     background-color: var(--button);
-    border: 1px solid var(--borderButton);
+    border: none;
     cursor: pointer;
-    border-radius: 1px;
+    border-radius: 20px;
     color: var(--colorFont);
+    height: 4.3rem;
+    text-align: center;
     
 }
 
@@ -125,10 +142,15 @@ button:hover {
 
 
 .sinal {
-    color:rgb(254, 132, 10);
-    /* color: white; */
-    /* background: #ec9327; */
+    /* color:rgb(254, 132, 10); */
+    color: white;
+    background: var(--backgroundSinal);
 }
+
+.sinal:hover {
+    background-color: var(--backgroundHoverSinal) ;
+}
+
 
 .apagarBtn{
     background-color: transparent;
@@ -142,11 +164,38 @@ button:hover {
 
 .apagarBtn p  {
     position: relative;
+    color: var(--colorFont);
     /* right: 114px;
     bottom: 25px; */
 
 }
 .apagarBtn:hover {
     background-color: transparent;
-    color: rgb(90, 90, 90); 
+     
+}
+.apagarBtn p:hover {
+    color: var(--background);
+}
+
+@media screen  and (min-width: 1000px){
+    .containerCalculadora {
+        width: 305px;
+
+    }
+
+    .teclado {
+        height: 382px;
+    }
+
+    button {
+        height: 4rem;
+    }
+}
+
+@media (orientation: landscape) {
+   .containerCalculadora {
+    margin-top: 90px;
+    margin-bottom: 40px;
+    
+   }
 }
