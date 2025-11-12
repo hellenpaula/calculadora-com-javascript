@@ -32,7 +32,7 @@ Durante o processo, o foco esteve em compreender como estruturar o raciocínio l
 
 - [JavaScript (ES6+)](https://developer.mozilla.org/en-US/docs/Web/JavaScript) – Implementação da lógica de cálculo e manipulação do DOM.
 
--[Font Awesome](https://fontawesome.com/) - Ícones utilizados para indicar o estado do tema(sol/lua).
+- [Font Awesome](https://fontawesome.com/) - Ícones utilizados para indicar o estado do tema(sol/lua).
 
 ## ⚙️ Fluxo lógico da calculadora:
 O funcionamento da calculadora foi estruturado com base em três estados principais e controle de eventos em cada botão.
