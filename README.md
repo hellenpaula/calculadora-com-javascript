@@ -8,7 +8,7 @@ Este é um projeto de calculadora funcional e interativa, desenvolvida com HTML,
 
 O projeto evoluiu para incluir uma alternância entre temas claros e escuros, aprimorando a experiência visual e o entendimento sobre o uso de variáveis CSS dinâmicas e manipulação de classes via JavaScript.
 
-Durante o processo, o foco esteve em compreender como estruturar o raciocínio lógico de uma calculadora real, garantindo assim um entendimento sólido sobre como valores, operadores e resultados interagem entre si.
+Durante o processo, o foco esteve em compreender como estruturar o raciocínio lógico de uma calculadora real, garantindo assim um entendimento sólido sobre como valores, operadores e como resultados interagem entre si.
 
 ## 🧩 Funcionalidades:
 - **Operações básicas:** adição, subtração, multiplicação e divisão.
